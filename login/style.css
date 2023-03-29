@@ -217,14 +217,6 @@ main {
   padding: 0 20px;
 }
 
-.sign-up a {
-  color: #020335;
-}
-
-.sign-up a:hover {
-  color: #58aff2;
-}
-
 .login a {
   color: #58aff2;
 }
@@ -270,26 +262,26 @@ hr {
 .submit-cont button {
   width: 25%;
   padding: 10px;
-}
 
-
-.cancelbtn {
-  background: linear-gradient(91.26deg, #3f4383 0%, #7e00a1 21.74%, #FF56A9 54.03%, #e93f60 85.28%);
-  border-radius: 12px;
-  text-align: center;
-  font-size: 1em;
-  cursor: pointer;
-  border: none;
 }
 
 .signupbtn {
   background: linear-gradient(91.26deg, #58aff2 0%, #7e00a1 21.74%, #56b0ff 54.03%, #3f4383 85.28%);
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
   font-size: 1em;
   cursor: pointer;
   border: none;
 }
+
+.psw-recover {
+  background-color: inherit;
+  color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+
+}
+
 
 /* Fading animation */
 .fade {
@@ -507,7 +499,6 @@ footer {
     width: 75%;
   }
 
-
 }
 
 @media only screen and (max-width: 750px) {
@@ -567,6 +558,14 @@ footer {
     display: none;
   }
 
+  .first-nav ul li {
+    padding: 15px;
+  }
+
+  .first-nav ul {
+    margin-top: -50px;
+  }
+
   .second-nav div,
   .third-nav div {
     margin: 0 auto;
@@ -590,7 +589,7 @@ footer {
   }
 
   .logo {
-    bottom: 80%;
+    bottom: 60%;
   }
 
   .logo a {

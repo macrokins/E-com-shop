@@ -540,7 +540,7 @@ footer {
   /* ----Hamburger---- */
   .nav-bar {
     position: fixed;
-    top: 100px;
+    top: 80px;
     right: 0;
     width: 60%;
     height: 100vh;
@@ -567,6 +567,14 @@ footer {
     display: none;
   }
 
+  .first-nav ul li {
+    padding: 15px;
+  }
+
+  .first-nav ul {
+    margin-top: -40px;
+  }
+
   .second-nav div,
   .third-nav div {
     margin: 0 auto;
@@ -590,7 +598,7 @@ footer {
   }
 
   .logo {
-    bottom: 80%;
+    bottom: 60%;
   }
 
   .logo a {
