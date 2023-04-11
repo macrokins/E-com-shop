@@ -386,13 +386,18 @@ main .cover {
 }
 
 .spec {
-  color: #07072a;
+  color: #020236;
   text-align: center;
   font-size: 0.7em;
   line-height: 20px;
   margin: 0 50px;
   padding: 10px 40px;
   text-transform: uppercase;
+}
+
+.spec:hover,
+.spec-cont a:hover {
+  color: #1a07e9;
 }
 
 .spec span {
@@ -1051,8 +1056,8 @@ footer {
     background-color: inherit;
   }
 
-  .spec {
-    font-size: 0.7em;
+  .lap .spec {
+    font-size: 0.5em;
     margin: 0;
     padding: 10px 50px;
   }
@@ -1544,12 +1549,16 @@ footer {
   }
 }
 
-/* -----Registration & Signup page styling----- */
+/* -----Registration & Signin page styling----- */
 
 .second-cont-reg {
   display: flex;
   justify-content: center;
   font-size: 2.5em;
+}
+
+.my-acc a:hover {
+  color: #000000;
 }
 
 .second-cont-reg div {
@@ -1648,7 +1657,7 @@ hr {
   display: none;
 }
 
-/* -----registration & Signup page media query---- */
+/* -----registration & Signin page media query---- */
 
 @media only screen and (max-width: 912px) and (min-width: 830px) {
   .third-cont {
@@ -1743,7 +1752,7 @@ hr {
 
 .cat-section {
   width: 20vw;
-  height: 75vh;
+  height: 61vh;
   border: 1px solid rgb(8, 3, 57);
   border-radius: 8px;
   padding: 0;
@@ -1815,6 +1824,11 @@ hr {
   font-size: 0.9em;
   text-align: center;
 }
+
+/* 
+.spec-cont a:hover {
+  color: #1a07e9;
+} */
 
 .spec-cont .price {
   font-size: 1em;

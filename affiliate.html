@@ -18,47 +18,35 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Login page!</title>
+    <title>Affiliate Page!</title>
   </head>
   <body>
     <nav class="main-nav">
       <!-- ------Header Container consist of three nav---- -->
 
-      <div class="first-nav">
+      <div class="first-nav disappear">
         <ul class="nav-list nav-bar">
-          <li><a class="nav-link" href="/home/index.html">Home</a></li>
-          <li>
-            <a class="nav-link" href="/home/account/index.html">My Account</a>
-          </li>
-
-          <!-- <li>
-            <a class="nav-link" href="/home/registration/index.html"
-              >Register</a
-            >
-          </li> -->
-          <li><a class="nav-link" href="">Order</a></li>
-          <li><a class="nav-link" href="">Track Order</a></li>
-          <li class="hbg-link"><a class="nav-link" href="">Shop</a></li>
-          <li class="hbg-link"><a class="nav-link" href="">Our Services</a></li>
-          <li class="hbg-link"><a class="nav-link" href="">Affiliate</a></li>
+          <li class="hbg-link"><a href="/home/index.html">Home</a></li>
           <li class="hbg-link">
-            <a class="nav-link" href="">Terms & Conditons</a>
+            <a class="nav-link" href="./shop.html">Shop</a>
+          </li>
+          <li class="hbg-link"><a href="./accessories.html">Accessories</a></li>
+          <li class="hbg-link"><a class="nav-link" href="">Our Services</a></li>
+          <li class="hbg-link">
+            <a class="nav-link" href="./affiliate.html">Affiliate</a>
+          </li>
+          <li class="hbg-link">
+            <a class="nav-link" href="./tnc.html">Terms & Conditons</a>
           </li>
         </ul>
-        <div class="contact">
-          <div class="mail">
-            <i class="fa fa-envelope-o"></i>odeysealtd@gmail.com
-          </div>
-          <div class="phone"><i class="fa fa-phone"></i>+2348060350746</div>
-        </div>
-      </div>
-      <!-- ---end of first nav--- -->
-      <div class="logo logo-r">
-        <a href="/home/index.html">
-          <img src="/home/images/logo.jpeg" alt="logo" />
-        </a>
+        <div class="contact"></div>
       </div>
       <div class="second-nav reg-nav">
+        <div class="logo logo-a">
+          <a href="/home/index.html">
+            <img src="images/logo.jpeg" alt="logo" />
+          </a>
+        </div>
         <div class="first-srch search">
           <form class="search" action="/action_page.php">
             <label for="search"></label>
@@ -98,14 +86,13 @@
               placeholder="search"
             />
             <input class="submit" type="submit" />
-            <!-- <i style="font-size: 24px" class="fa">&#xf002;</i> -->
           </form>
         </div>
         <ul class="third-navLinks">
-          <li><a href="">Shop</a></li>
-          <li><a href="">Accessories</a></li>
-          <li><a href="">Our Services</a></li>
-          <li><a href="">Terms & Conditons</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./shop.html">Accessories</a></li>
+          <li><a href="service.html">Our Services</a></li>
+          <li><a href="./tnc.html">Terms & Conditons</a></li>
         </ul>
       </div>
       <!-- ----End of third-nav---- -->
@@ -123,47 +110,38 @@
           </div>
           <div class="stroke"><p>|</p></div>
           <div class="my-acc">
-            <a href="/home/login/index.html">My Account</a>
+            <a href="/home/account.html">My Account</a>
           </div>
         </div>
       </div>
-      <div class="second-cont-reg">
-        <div class="sign-up">
-          <a href="/home/registration/index.html">Sign Up</a>
+      <div class="sec-cont">
+        <div class="left-cont">
+          <ul>
+            <li><a href="">Dashboard</a></li>
+            <hr />
+            <li><a href="">Orders</a></li>
+            <hr />
+            <li><a href="">Track Order</a></li>
+            <hr />
+            <li><a href="">Addresses</a></li>
+            <hr />
+            <li><a href="">Payment methods</a></li>
+            <hr />
+            <li><a href="">Account details</a></li>
+            <hr />
+            <li><a href="./index.html">Logout</a></li>
+          </ul>
         </div>
-        <!-- <div class="stroke"><p>|</p></div> -->
-        <div class="login"><a href="/home/login/index.html">Login</a></div>
-      </div>
-      <div class="third-cont reduce-width">
-        <form action="">
-          <p>Please login with your credentials.</p>
-          <hr />
-          <label for="email">Email</label><br /><br />
-          <input type="email" name="email" required /><br />
-          <br />
-          <label class="label" for="password">Password</label><br />
-          <br />
-          <input
-            type="password"
-            name="password"
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
-            maxlength="18"
-            minlength="6"
-            required
-          />
-          <br />
-          <br />
-          <div class="submit-cont">
-            <button type="submit" class="signupbtn">
-              <a href="/home/account/index.html">Login</a></button
-            ><br />
-            <br />
-            <button type="submit" class="psw-recover">
-              Lost your password?
-            </button>
+        <div class="right-cont">
+          <div class="user">Hello User</div>
+          <div class="user-info">
+            <p>
+              From your account dashboard you can view your recent orders,
+              manage your shipping and billing addresses, and edit your password
+              and account details.
+            </p>
           </div>
-        </form>
+        </div>
       </div>
     </main>
 
@@ -203,17 +181,17 @@
           <div>
             <ul class="ft-qk-links">
               <li class="ma">
-                <a href="/home/login/index.html">My Account</a>
+                <a href="/home/login.html">My Account</a>
               </li>
-              <li class="ma"><a href="">Order & Payment</a></li>
-              <li class="ma"><a href="">Track Order</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">Our Services</a></li>
+              <li class="ma"><a href="./order.html">Order & Payment</a></li>
+              <li class="ma"><a href="./tracking.html">Track Order</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li><a href="./service.html">Our Services</a></li>
               <li>
-                <a href="">Terms & Conditons</a>
+                <a href="./tnc.html">Terms & Conditons</a>
               </li>
               <li>
-                <a class="nav-link" href="">Affiliate</a>
+                <a class="nav-link" href="./affiliate.html">Affiliate</a>
               </li>
             </ul>
           </div>
@@ -221,6 +199,6 @@
       </div>
       <div class="signature">© 2023 Ijakpa</div>
     </footer>
-    <script src="/home/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
