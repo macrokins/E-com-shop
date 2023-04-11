@@ -276,6 +276,31 @@ main .cover {
   background-color: #717171;
 }
 
+.first-cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 2%;
+}
+
+.right {
+  color: #131111;
+  font-size: 1.3em;
+}
+
+.left {
+  display: flex;
+}
+
+.home {
+  font-size: 1.3em;
+  margin-top: 0px;
+}
+
+.stroke {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -291,7 +316,6 @@ main .cover {
   grid-gap: 50px;
   padding: 10px 0;
   margin: 0 15px;
-  /* background-color: #58aff2; */
 }
 
 .slide-prods div {
@@ -362,7 +386,6 @@ main .cover {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 20px 0;
-  /* background-color: rgb(3, 58, 40); */
 }
 
 .img-cont {
@@ -481,15 +504,22 @@ main .cover {
 
 
 .bd-txt {
-  background-color: rgb(240, 238, 232);
-  padding: 20px 15%;
+  background-color: rgb(251, 250, 248);
+  padding: 20px 7%;
   margin: 20px 5px 0 5px;
   border: 4px solid gainsboro;
 }
 
+.bd-txt h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .bd-txt p {
 
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.7em;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -1012,7 +1042,21 @@ footer {
   }
 
   .prods-img {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .pop-prods {
+    margin-bottom: -100px;
+  }
+
+  .img-cont {
+    width: 180px;
+    height: 120px;
+  }
+
+  .img-cont:hover {
+    width: 190px;
+    height: 125px;
   }
 
   .lap {
@@ -1029,6 +1073,20 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 
+  .brand-ls {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .brand-ls ul {
+    justify-content: flex-start;
+    padding-left: 10%;
+  }
+
+  .brand-h h3 {
+    font-size: 1.2em;
+  }
+
   .logo-img {
     width: 70px;
     height: 40px;
@@ -1038,8 +1096,12 @@ footer {
     padding: 10px;
   }
 
+  .bd-txt h3 {
+    font-size: 1em;
+  }
+
   .bd-txt p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: 1.5em;
   }
 
@@ -1053,6 +1115,10 @@ footer {
 
   .brand-ls {
     padding-left: 15px;
+  }
+
+  .brand-h h3 {
+    margin-bottom: 20px;
   }
 
   .qk-links {
@@ -1089,9 +1155,8 @@ footer {
   }
 
   .img-cont {
-    width: 300px;
-    height: 220px;
-    border-radius: 8px;
+    width: 180px;
+    height: 120px;
   }
 
   .cover-img {
@@ -1107,7 +1172,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 540px) {
   .second-nav div {
     margin: 0 auto;
   }
@@ -1124,9 +1189,19 @@ footer {
     font-size: 0.8em;
   }
 
+  .brand-ls {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .brand-ls ul {
+    justify-content: flex-start;
+  }
+
   .brand-h h3 {
     font-size: 0.9em;
   }
+
 }
 
 .nav-active {
@@ -1162,8 +1237,8 @@ footer {
   }
 
   .img-cont {
-    width: 300px;
-    height: 200px;
+    width: 180px;
+    height: 140px;
   }
 
   .brand-h h3 {
@@ -1174,13 +1249,47 @@ footer {
 
 @media only screen and (max-width: 375px) {
   .img-cont {
-    width: 300px;
-    height: 200px;
+    width: 180px;
+    height: 140px;
   }
 }
 
 @media only screen and (max-width: 280px) {
+
+  .mail {
+    display: none;
+  }
+
+  .phone {
+    display: none
+  }
+
+  .nav-bar {
+    height: 70vh;
+  }
+
+  .logo {
+    top: 10px;
+    z-index: 5;
+    margin-right: 20px;
+  }
+
+  .first-nav ul li {
+    padding: 12px;
+  }
+
+  .second-nav {
+    position: relative;
+    top: -20px;
+  }
+
+  .third-nav {
+    position: relative;
+    top: -30px;
+  }
+
   .cover {
+    margin: -140px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1197,6 +1306,23 @@ footer {
     font-size: 0.7em;
     margin-left: 5px;
     font-weight: lighter;
+  }
+
+  .slide2 {
+    display: none;
+  }
+
+  .slide4 {
+    display: none;
+  }
+
+  .slide-prods {
+    margin-top: -80px;
+    margin-bottom: -40px;
+  }
+
+  .pop-prods {
+    margin-bottom: -100px;
   }
 
   .top {

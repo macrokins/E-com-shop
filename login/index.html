@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/home/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,15 +26,16 @@
 
       <div class="first-nav">
         <ul class="nav-list nav-bar">
+          <li><a class="nav-link" href="/home/index.html">Home</a></li>
           <li>
-            <a class="nav-link" href="/home/login/index.html">My Account</a>
+            <a class="nav-link" href="/home/account/index.html">My Account</a>
           </li>
-          <li><a class="nav-link" href="/home/login/index.html">Login</a></li>
-          <li>
+
+          <!-- <li>
             <a class="nav-link" href="/home/registration/index.html"
               >Register</a
             >
-          </li>
+          </li> -->
           <li><a class="nav-link" href="">Order</a></li>
           <li><a class="nav-link" href="">Track Order</a></li>
           <li class="hbg-link"><a class="nav-link" href="">Shop</a></li>
@@ -52,12 +53,12 @@
         </div>
       </div>
       <!-- ---end of first nav--- -->
-      <div class="logo">
+      <div class="logo logo-r">
         <a href="/home/index.html">
-          <img src="images/logo.jpeg" alt="logo" />
+          <img src="/home/images/logo.jpeg" alt="logo" />
         </a>
       </div>
-      <div class="second-nav">
+      <div class="second-nav reg-nav">
         <div class="first-srch search">
           <form class="search" action="/action_page.php">
             <label for="search"></label>
@@ -80,7 +81,7 @@
         </div>
       </div>
       <!-- ----End of Second nav---- -->
-      <div class="third-nav">
+      <div class="third-nav no-third-nav">
         <div class="hamburger hamburger2">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -126,14 +127,14 @@
           </div>
         </div>
       </div>
-      <div class="second-cont">
+      <div class="second-cont-reg">
         <div class="sign-up">
           <a href="/home/registration/index.html">Sign Up</a>
         </div>
         <!-- <div class="stroke"><p>|</p></div> -->
         <div class="login"><a href="/home/login/index.html">Login</a></div>
       </div>
-      <div class="third-cont">
+      <div class="third-cont reduce-width">
         <form action="">
           <p>Please login with your credentials.</p>
           <hr />
@@ -155,8 +156,9 @@
           <br />
           <div class="submit-cont">
             <button type="submit" class="signupbtn">
-              <a href="/home/account/index.html">Login</a>
-            </button>
+              <a href="/home/account/index.html">Login</a></button
+            ><br />
+            <br />
             <button type="submit" class="psw-recover">
               Lost your password?
             </button>
@@ -219,6 +221,6 @@
       </div>
       <div class="signature">© 2023 Ijakpa</div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/home/script.js"></script>
   </body>
 </html>
