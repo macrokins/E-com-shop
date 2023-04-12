@@ -1,3 +1,13 @@
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $("header").addClass("nav-show");
+  } else {
+    $("header").removeClass("nav-show");
+  }
+});
+
+
 // -----Hamburger----
 
 const navSlide = () => {
