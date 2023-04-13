@@ -901,6 +901,7 @@ footer {
     transform: translatex(100%);
     transition: transform 0.5s ease-in;
     z-index: -1;
+    padding-top: 70px;
   }
 
   .nav-bar li a {
@@ -1911,44 +1912,68 @@ hr {
   }
 
   .shop-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+
+  .shop-items .price {
+    font-size: 0.8em;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+  }
+
+
+  .dis-price {
+    margin-bottom: 20px;
   }
 
   .shop-img {
     width: 100%;
-    height: 120px;
+    height: 100px;
 
   }
 
   .shop-img:hover {
-    width: 172px;
-    height: 125px;
+    width: 102%;
+    height: 105px;
   }
 
   .spec-cont {
     font-size: 0.7em;
+    margin-bottom: 0;
+  }
+
+  .spec-cont {
+    font-size: 0.9em;
+    text-align: center;
   }
 
   .iphone-img {
     width: 100%;
-    height: 180px;
+    height: 130px;
   }
 
   .iphone-img:hover {
     width: 102%;
-    height: 185px;
+    height: 135px;
   }
 }
 
-@media only screen and (max-width: 412px) {
-  .shop-grid {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+@media only screen and (max-width: 412px) {}
+
+@media only screen and (max-width: 280px) {
 
   .shop-items {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .shop-grid {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .shop-img {
@@ -1976,12 +2001,12 @@ hr {
 
 .tnc-details h2 {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .tnc-details p {
   font-size: 1em;
   line-height: 20px;
-
 }
 
 .tnc-details h5,
@@ -1989,9 +2014,31 @@ h6 {
   font-size: 1.1em;
   margin-top: 20px;
   font-weight: bolder;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 h6 {
   margin-bottom: 0;
+}
+
+/* -----Tnc media Query---- */
+@media only screen and (max-width: 750px) {
+  .tnc-header {
+    margin-top: 45%;
+    font-size: 1em;
+  }
+
+  .tnc-details h2 {
+    font-size: 0.9em;
+  }
+
+  .tnc-details p {
+    font-size: 0.8em;
+    line-height: 20px;
+  }
+
+  .tnc-details h5 {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
 }
